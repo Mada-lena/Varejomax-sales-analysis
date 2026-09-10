@@ -1,62 +1,71 @@
 # Varejomax-sales-analysis
 # 📊 Dashboard de Performance Comercial — VarejoMax
-**Case Study:** Análise de Vendas Multicanal e Multi-filial  
-**Ferramentas:** Power BI | DAX | Modelagem de Dados
+> **Case Study:** Análise de Vendas Multicanal e Multi-filial  
+> **Ferramentas:** Power BI | DAX | Modelagem de Dados
+
+---
+
+## 📸 Visualização do Dashboard
+
+![Dashboard de Performance Comercial - VarejoMax](assets/dashboard_preview.png)
 
 ---
 
 ## 🎯 1. O Problema de Negócio
-A **VarejoMax** é uma distribuidora com 4 filiais e 3 canais de venda (Loja Física, Televendas e E-commerce) atendidos por 7 vendedores. 
+A **VarejoMax** é uma distribuidora com 4 filiais e 3 canais de venda (Loja Física, Televendas e E-commerce) atendidos por uma equipa de 7 vendedores. 
 
-Devido ao rápido crescimento sem profissionalização da análise de dados, a gestão comercial enfrentava falta de visibilidade sobre:
-- Qual filial realmente puxava o faturamento;
-- A performance individual da equipa de vendas;
-- A evolução dos canais de distribuição ao longo do tempo.
+Devido ao rápido crescimento sem a devida profissionalização da análise de dados, a gestão comercial enfrentava uma falta de visibilidade clara sobre:
+- Qual filial realmente liderava o faturamento;
+- A performance individual de toda a força de vendas;
+- A evolução do mix de canais ao longo do tempo.
 
-O objetivo deste projeto foi transformar dados brutos em **respostas estratégicas** para dar suporte à tomada de decisão.
+O objetivo deste projeto foi transformar dados brutos em **respostas estratégicas e acionáveis** para apoiar a tomada de decisão.
 
 ---
 
 ## 🛠️ 2. Ferramentas e Abordagem
-Antes da criação dos visuais no Power BI, o projeto iniciou-se pela **mapeação das perguntas de negócio**:
-1. **Modelagem de Dados:** Estruturação da base de dados de vendas por filial, canal e vendedor.
-2. **Criação de Medidas em DAX:** Desenvolvimento de métricas como *Receita Total*, *Ticket Médio*, *Participação Percentual (%) por Canal e Região*.
-3. **Construção de Dashboard Visual:** KPIs no topo, série temporal de vendas, doughnut chart por canal e ranking de vendedores.
+Antes de construir os visuais no Power BI, o projeto iniciou-se pela **mapeação das perguntas de negócio**:
+1. **Modelagem de Dados:** Estruturação das tabelas de vendas por filial, canal, UF e vendedor.
+2. **Criação de Medidas em DAX:** Desenvolvimento de KPIs estratégicos (*Receita Venda*, *Qtd Devolvida*, *Qtd Concluída*, *Total Filial*, *Ticket Médio* e *Participação Percentual*).
+3. **Construção de Dashboard Visual:** Design intuitivo com menu lateral, KPIs de topo, gráfico de série temporal com comparação do mês anterior, distribuição regional, doughnut chart por canal, detalhamento em tabela e ranking completo de vendedores.
 
 ---
 
-## 🖼️ 3. Visualização dos Dados (Dashboard)
-*(Insere aqui a captura de ecrã do dashboard do Power BI)*
+## 🔍 3. Principais Descobertas (Insights)
 
----
-
-## 🔍 4. Principais Descobertas (Insights)
-
-* **Desempenho por Filial:** A *Loja Centro* lidera com **30,71%** do faturamento total (R$ 4,66 Mi), seguida da Norte (25,12%), Leste (22,54%) e Sul (21,64%). A distribuição é relativamente equilibrada.
-* **Ranking de Vendedores:** Diogo Almeida lidera as vendas com **R$ 3,42 Mi**, seguido por Elaine Rocha e Ana Souza (ambas com R$ 2,33 Mi).
+* **Desempenho por Filial:** A *Loja Centro* lidera o faturamento com **30,71%** da receita total, seguida pela *Norte* (25,12%), *Leste* (22,54%) e *Sul* (21,64%). A receita global atingiu **R$ 15 Mi** (R$ 15.172.972 no detalhe).
+* **Performance da Força de Vendas:**
+  - **Diogo Almeida** é o líder isolado de vendas, gerando **R$ 3,42 Mi**.
+  - **Elaine Rocha** e **Ana Souza** aparecem empatadas na segunda posição com **R$ 2,33 Mi** cada.
+  - A amplitude de vendas varia de R$ 3,42 Mi (líder) a R$ 1,02 Mi (Gabriela Torres), revelando a necessidade de nivelamento da equipa.
+* **Canais de Distribuição:** A *Loja Física* ainda é o canal dominante (**48,96%** / R$ 7 Mi), seguida pelo *E-commerce* (**29,2%** / R$ 4 Mi) e *Televendas* (**21,84%** / R$ 3 Mi).
 * **Mudança Estrutural no Mix de Canais (2024–2026):**
   - **E-commerce:** Quase dobrou a sua participação no mix de vendas, saltando de **15,59% para 30,60%** (+15,01 p.p.).
   - **Loja Física:** Sofreu um declínio contínuo, caindo de **54,59% para 44,12%** (-10,47 p.p.).
-  - **Televendas:** Também reduziu a representatividade de **29,83% para 25,81%** (-4,02 p.p.).
+  - **Televendas:** Reduziu a representatividade de **29,83% para 25,81%** (-4,02 p.p.).
 
 ---
 
-## ⚠️ 5. Limitações Identificadas na Base de Dados
-Uma entrega analítica completa exige reconhecer o que o painel **ainda não responde**:
-1. **Falta de Causabilidade:** O dashboard mostra *o que* está a acontecer (queda da Loja Física e crescimento do E-commerce), mas **não explica *o porquê***. Faltam variáveis comportamentais do cliente.
-2. **Ponto Cego na Equipa de Vendas:** O painel inicial apresenta apenas o *Top 3*, deixando 4 vendedores sem acompanhamento no relatório.
-3. **Métricas Faltantes:** Ausência de *Ticket Médio individual por vendedor* e *série temporal desagregada por filial/canal*.
+## ⚠️ 4. Limitações Identificadas na Base de Dados
+Uma entrega analítica de elevado valor exige identificar as fronteiras dos dados e o que o painel **ainda não consegue responder**:
+
+1. **Ausência de Causabilidade (Porquê da Queda nos Canais Tradicionais):** O dashboard diagnostica *o que* está a acontecer (queda da Loja Física e Televendas em prol do E-commerce), mas a base atual não possui dados qualitativos ou comportamentais que expliquem *o porquê* (ex: se é uma migração saudável de canal ou perda real de clientes por atrito no atendimento presencial).
+2. **Granularidade Temporal Desagregada:** O gráfico de evolução mensal apresenta a quantidade agregada, não permitindo isolar a sazonalidade específica de cada canal ou filial separadamente.
+3. **Métricas Faltantes por Vendedor:** O Ticket Médio está disponível ao nível de Filial/Canal (média geral de R$ 2.052,34), mas ainda não está individualizado por vendedor.
 
 ---
 
-## 💡 6. Recomendações Estratégicas & Próximos Passos
+## 💡 5. Recomendações Estratégicas & Próximos Passos
 
-### 🚀 Ações de Negócio Imediatas:
-- **Priorizar Investimentos no E-commerce:** Canal com trajetória de crescimento consistente e sustentado.
-- **Acompanhamento Integral da Força de Vendas:** Expandir a visibilidade do painel para os 7 vendedores com inclusão do Ticket Médio individual.
+### 🚀 Recomendação de Negócio (Curto Prazo):
+- **Acelerar Investimentos no E-commerce:** Direcionar orçamento de marketing e infraestrutura para o e-commerce, o único canal com tendência de crescimento consistente (+15,01 p.p.).
+- **Plano de Capacitação de Vendas:** Utilizar a visibilidade total do ranking para criar programas de *mentoring* interno, aproximando a performance dos vendedores da base (ex: Gabriela Torres e Carla Mendes) dos resultados dos *top performers*.
 
 ### 🔬 Plano de Investigação de Dados (Análise Diagnóstica):
-Para responder à causa da perda de representatividade da Loja Física e Televendas, propõe-se o cruzamento de novas bases:
-- **Análise de Omnicanalidade (ID do Cliente):** Verificar se os clientes físicos migraram para o e-commerce (migração saudável) ou se o e-commerce atraiu novos clientes enquanto a loja física sofreu *churn* (perda).
-- **Métricas Qualitativas (NPS e Atendimento):** Recolher dados de satisfação e motivos de desistência no canal presencial/televendas.
-- **Auditoria de Preço e Stock:** Avaliar se campanhas exclusivas ou ruturas de stock no canal presencial forçaram a migração para o digital.
+Para responder às causas da perda de tração da Loja Física e Televendas, propõe-se o enriquecimento do modelo de dados com:
+- **Cruzamento de ID do Cliente (Omnicanalidade):** Mapear se os clientes tradicionais estão a migrar para o digital ou se a loja física está a sofrer *churn* (abandono).
+- 
+- **Dados Qualitativos (NPS e Atendimento):** Integrar pesquisas de satisfação e motivos de desistência na loja física/televendas.
+- **Análise de Preço e Stock:** Verificar se disparidades de preço, promoções exclusivas do site ou falta de stock presencial estão a forçar a migração de canal.
+---
+
