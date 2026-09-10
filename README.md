@@ -8,7 +8,7 @@
 ## 📸 Visualização do Dashboard
 
 ![Dashboard de Performance Comercial - VarejoMax](IMG-20260910-WA0160.jpg)
-
+VID-20260910-WA0161.gif
 ---
 
 ## 🎯 1. O Problema de Negócio
