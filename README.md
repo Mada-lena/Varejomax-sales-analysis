@@ -7,7 +7,7 @@
 
 ## 📸 Visualização do Dashboard
 
-![Dashboard de Performance Comercial - VarejoMax](assets/dashboard_preview.png)
+![Dashboard de Performance Comercial - VarejoMax](IMG-20260910-WA0160.jpg)
 
 ---
 
