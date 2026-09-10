@@ -9,6 +9,8 @@
 
 ![Dashboard de Performance Comercial - VarejoMax](IMG-20260910-WA0160.jpg)(VID-20260910-WA0161-ezgif.com-video-to-gif-converter.gif)
 
+### 🎥 Demonstração Interativa
+![Demonstração do VarejoMax](VID-20260910-WA0161-ezgif.com-video-to-gif-converter.gif)
 ---
 
 ## 🎯 1. O Problema de Negócio
