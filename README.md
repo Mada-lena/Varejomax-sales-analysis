@@ -52,8 +52,6 @@ Antes de construir os visuais no Power BI, o projeto iniciou-se pela **mapeaçã
 Uma entrega analítica de elevado valor exige identificar as fronteiras dos dados e o que o painel **ainda não consegue responder**:
 
 1. **Ausência de Causabilidade (Porquê da Queda nos Canais Tradicionais):** O dashboard diagnostica *o que* está a acontecer (queda da Loja Física e Televendas em prol do E-commerce), mas a base atual não possui dados qualitativos ou comportamentais que expliquem *o porquê* (ex: se é uma migração saudável de canal ou perda real de clientes por atrito no atendimento presencial).
-2. **Granularidade Temporal Desagregada:** O gráfico de evolução mensal apresenta a quantidade agregada, não permitindo isolar a sazonalidade específica de cada canal ou filial separadamente.
-3. **Métricas Faltantes por Vendedor:** O Ticket Médio está disponível ao nível de Filial/Canal (média geral de R$ 2.052,34), mas ainda não está individualizado por vendedor.
 
 ---
 
@@ -65,7 +63,7 @@ Uma entrega analítica de elevado valor exige identificar as fronteiras dos dado
 
 ### 🔬 Plano de Investigação de Dados (Análise Diagnóstica):
 Para responder às causas da perda de tração da Loja Física e Televendas, propõe-se o enriquecimento do modelo de dados com:
-- **Cruzamento de ID do Cliente (Omnicanalidade):** Mapear se os clientes tradicionais estão a migrar para o digital ou se a loja física está a sofrer *churn* (abandono).
+- **(Omnicanalidade):** Mapear se os clientes tradicionais estão a migrar para o digital ou se a loja física está a sofrer *churn* (abandono).
 - 
 - **Dados Qualitativos (NPS e Atendimento):** Integrar pesquisas de satisfação e motivos de desistência na loja física/televendas.
 - **Análise de Preço e Stock:** Verificar se disparidades de preço, promoções exclusivas do site ou falta de stock presencial estão a forçar a migração de canal.
